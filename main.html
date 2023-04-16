@@ -1,57 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>car sign-up</title>
+  <title>Car Sign-up</title>
 </head>
 <body>
-  <form>
+  <form action="/submit-form" method="post">
     <section>
       <label for="name">Name*</label><br>
-    <input type="text" required>
+      <input type="text" id="name" name="name" required>
     </section>
     <section>
       <label for="email">E-mail*</label><br>
-      <input type="email" required>
+      <input type="email" id="email" name="email" required>
     </section>
     <br>
     <section>
-      <label for="gender">Gender*</label>
-      <input type="radio" name="gender">Male
-      <input type="radio" name="gender">Female
+      <label for="gender">Gender*</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
     </section><br>
     <section>
-      <select name="laptop" id="Laptop Brands">
-        <option value="">choose your Laptop</option>
+      <label for="laptop">Laptop Brand*</label><br>
+      <select id="laptop" name="laptop" required>
+        <option value="">Choose your Laptop</option>
         <option value="Apple">Apple</option>
-        <option value="Ausu">Asus</option>
+        <option value="Asus">Asus</option>
         <option value="HP">HP</option>
       </select>
     </section><br>
-
     <section>
-      <label for="age">Age*</label>
-      <input type="number" required>
+      <label for="age">Age*</label><br>
+      <input type="number" id="age" name="age" required>
     </section><br>
     <section>
-      <label for="DOB">DOB*</label>
-      <input type="datetime-local" required>
+      <label for="dob">DOB*</label><br>
+      <input type="datetime-local" id="dob" name="dob" required>
     </section><br>
     <section>
-      <label for="tel">Phone number*</label>
-      <input type="tel">
+      <label for="tel">Phone number*</label><br>
+      <input type="tel" id="tel" name="tel">
     </section><br>
     <section>
-      <label for="pwd">Password*</label>
-      <input type="password" required>
+      <label for="pwd">Password*</label><br>
+      <input type="password" id="pwd" name="password" required>
     </section><br>
     <section>
-      <label for="button"><button>submit</button></label>
-    </section>
-    
-
-  </form>
-  
-</body>
-</html>
+      <button type="submit">Submit
