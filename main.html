@@ -1,41 +1,57 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Job Application Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>car sign-up</title>
 </head>
 <body>
-  <form method="post" action="submit_form.php">
-    <label for="name">Name*</label>
-    <input type="text" id="name" name="name" required>
+  <form>
+    <section>
+      <label for="name">Name</label><br>
+    <input type="text" required>
+    </section>
+    <section>
+      <label for="email">E-mail</label><br>
+      <input type="email" required>
+    </section>
     <br>
-    <label for="email">Email*</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="gender">Gender*</label>
-    <input type="radio" id="gender" name="gender" value="male"> Male
-    <input type="radio" id="gender" name="gender" value="female"> Female
-    <input type="radio" id="gender" name="gender" value="other"> Other
-    <br>
-    <label for="laptop">Laptop Brands</label>
-    <select id="laptop" name="laptop">
-      <option value="Apple">Apple</option>
-      <option value="Asus">Asus</option>
-      <option value="HP">HP</option>
-    </select>
-    <br>
-    <label for="age">Age*</label>
-    <input type="number" id="age" name="age" required>
-    <br>
-    <label for="dob">DOB*</label>
-    <input type="date" id="dob" name="dob" required>
-    <br>
-    <label for="password">Password*</label>
-    <input type="password" id="password" name="password" required>
-    <br>
-    <label for="portfolio">Portfolio URL</label>
-    <input type="url" id="portfolio" name="portfolio">
-    <br>
-    <input type="submit" value="Submit">
+    <section>
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender">Male
+      <input type="radio" name="gender">Female
+    </section><br>
+    <section>
+      <select name="cars" id="car">
+        <option value="">choose your car</option>
+        <option value="BMW">BMW</option>
+        <option value="AUDI">Audi</option>
+        <option value="Mercedez">Mersedez</option>
+      </select>
+    </section><br>
+
+    <section>
+      <label for="age">Age</label>
+      <input type="number" required>
+    </section><br>
+    <section>
+      <label for="DOB">DOB</label>
+      <input type="datetime-local" required>
+    </section><br>
+    <section>
+      <label for="tel">Phone number</label>
+      <input type="tel">
+    </section><br>
+    <section>
+      <label for="pwd">Password</label>
+      <input type="password" required>
+    </section><br>
+    <section>
+      <label for="button"><button>submit</button></label>
+    </section>
+    
+
   </form>
+  
 </body>
 </html>
